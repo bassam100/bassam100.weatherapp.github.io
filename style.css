@@ -1,0 +1,145 @@
+body {
+    background-color: rgba(11, 30, 52, 10);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(39, 69, 103, 0.10);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* Section 1 */
+
+
+.container #NewYorkCard,
+.container #BerlinCard,
+.container #TokyoCard,
+.container #TexasCard {
+    background-color: rgb(84, 174, 219);
+    height: auto;
+}
+
+.container #NewYork,
+.container #Berlin,
+.container #Tokyo,
+.container #Texas {
+    width: 330px;
+}
+
+@media(max-width: 1400px) {
+    .container #Texas {
+        display: none;
+    }
+}
+
+@media(max-width: 1199px) {
+    .container #Tokyo {
+        display: none;
+    }
+}
+
+@media(max-width: 767px) {
+    .container #Berlin {
+        display: none;
+    }
+}
+
+@media(max-width: 284px) {
+    .container #NewYork {
+        display: none;
+    }
+}
+
+/* Section 2 */
+.container #currentCity,
+.container #hurricane,
+.container #ozone {
+    display: flex;
+    justify-content: center;
+}
+
+.container #currentCityCard,
+.container #hurricaneCard,
+.container #ozoneCard {
+    background-color: rgb(122, 95, 218);
+    width: 424px;
+    height: 490px;
+    margin: 10px;
+}
+
+/* search box shadow */
+.container .search {
+    width: 340px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    margin: 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+/* search button background */
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 35px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: rgb(208, 194, 217);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 8px 10px;
+}
+
+
+
+::placeholder {
+    color: #cbcdcf;
+}
+
+.container #seachBtnImg {
+    width: 20px;
+}
+
+.container #currentCityImg {
+    display: block;
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.container #humidityImg,
+.container #windImg {
+    width: 50px;
+    padding-top: 14px;
+}
+
+.error {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.weather,
+.error {
+    display: none;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(179, 142, 161);
+}

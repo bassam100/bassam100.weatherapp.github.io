@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comingSoon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="card bg-dark text-white" style="margin: 25px;">
+        <img class="card-img" src="image/UnderConstruction.avif">
+        <div class="card-img-overlay">
+            <h1 style="text-align: center; margin-top: 50px;">This Web Page is under Construction</h1>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("headernav.html");
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>
